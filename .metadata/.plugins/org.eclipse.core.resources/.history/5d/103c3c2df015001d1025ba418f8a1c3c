@@ -1,0 +1,38 @@
+package TrabalhandoComArrayEmatriz;
+
+public class Disciplina {
+
+	private String disciplinas;
+	private double notas;
+	
+	public Disciplina() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Disciplina(String disciplinas, double notas) {
+		super();
+		this.disciplinas = disciplinas;
+		this.notas = notas;
+	}
+
+	public String getDisciplinas() {
+		return disciplinas;
+	}
+
+	public void setDisciplinas(String disciplinas) {
+		this.disciplinas = disciplinas;
+	}
+
+	public double getNotas() {
+		return notas;
+	}
+
+	public void setNotas(double notas) {
+		this.notas = notas;
+	}
+	
+	
+	
+	
+
+}

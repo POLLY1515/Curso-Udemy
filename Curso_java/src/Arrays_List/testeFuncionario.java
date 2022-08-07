@@ -1,0 +1,40 @@
+package Arrays_List;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class testeFuncionario {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		List<Funcionario> list = new ArrayList<>();
+		
+		System.out.print("Quantos funcionários serão cadastrados?");
+		int quant = sc.nextInt();
+		for(int cont = 0;cont < quant;cont++) {
+			System.out.print("Entre com o ID do funcionário "+ (cont +1) + ":");
+			int id = sc.nextInt();
+			System.out.print("Entre com o nome do funcionário:");
+			String nome = sc.next();
+			System.out.print("Entre com o salário do funcionário " + nome + ":");
+			double salario = sc.nextDouble();
+			
+			Funcionario fun = new Funcionario(id, nome, salario);
+			list.add(fun);
+			for (Funcionario funcionario : list) {
+				System.out.println("Dados:" + funcionario);
+			}
+				}
+		
+		
+     sc.close();
+	}
+
+
+
+	}
+
+

@@ -1,0 +1,41 @@
+package TrabalhandoComArrayEmatriz;
+
+
+
+public class ManipulandoArrays {
+	
+	public static void main(String[] args) {
+		double[] notas = {4.4,5.7,8.9,9.9};
+		double[] notasLogica = {4.1,1.7,4.9,2.9};
+		
+		Aluno aluno = new Aluno();
+		aluno.setNome("Poliana Beatriz");
+		aluno.setNomeEscola("Unicesumar");
+		
+		//criacao da disciplina 1
+		Disciplina disciplina1 = new Disciplina();
+		disciplina1.setDisciplinas("Java web");
+		
+	    //adicionando as notas na disciplina
+		disciplina1.setNotas(notas);
+		
+		//adicionando o aluno na disciplina
+		aluno.getDisciplina().add(disciplina1);
+		
+		//criacao da disciplina 2
+		
+		Disciplinas disciplina2 = new Disciplinas();
+		disciplina2.setDisciplinas("logica");
+		disciplina2.setNotas(notasLogica);
+		
+		disciplina2.setNotas(notas);
+		
+		aluno.getDisciplina().add(disciplina2);
+		
+
+	}
+
+
+}
+
+

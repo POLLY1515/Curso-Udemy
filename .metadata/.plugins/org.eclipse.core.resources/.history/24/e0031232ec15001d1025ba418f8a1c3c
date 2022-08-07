@@ -1,0 +1,46 @@
+package TrabalhandoComArrayEmatriz;
+
+public class Disciplina {
+
+	private String java;
+	private String bancodados;
+	private String servelets;
+	
+	public Disciplina() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Disciplina(String java, String bancodados, String servelets) {
+		super();
+		this.java = java;
+		this.bancodados = bancodados;
+		this.servelets = servelets;
+	}
+
+	public String getJava() {
+		return java;
+	}
+
+	public void setJava(String java) {
+		this.java = java;
+	}
+
+	public String getBancodados() {
+		return bancodados;
+	}
+
+	public void setBancodados(String bancodados) {
+		this.bancodados = bancodados;
+	}
+
+	public String getServelets() {
+		return servelets;
+	}
+
+	public void setServelets(String servelets) {
+		this.servelets = servelets;
+	}
+	
+	
+
+}

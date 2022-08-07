@@ -1,0 +1,77 @@
+package TrabalhandoComArrayEmatriz;
+
+
+
+public class DiferentesFormasDeAtribuirValores {
+	
+	public static void main(String[] args) {
+		//Atribuindo valore direto
+		double[] valores1 = {3.3,9.6,7.8};
+		
+		
+		//Atribuindo valores separadamente
+		String[]valores2 = new String[4];
+		
+		valores2[0]= "Joana";
+		valores2[1]= "Marta";
+		valores2[2]= "98";
+		valores2[3]= "casada";
+		
+		
+		for(int pos = 0;pos < valores2.length;pos++) {
+			System.out.println("O valor na  posicão " + (pos + 1) + "é:" + valores2[pos]);
+		}
+	
+		double[] notas = {4.4,5.7,8.9,9.9};
+		double[] notasLogica = {4.1,1.7,4.9,2.9};
+		
+		Aluno aluno = new Aluno();
+		aluno.setNome("Poliana Beatriz");
+		aluno.setNomeEscola("Unicesumar");
+		
+		//criacao da disciplina 1
+		Disciplinas disciplina1 = new Disciplinas();
+		disciplina1.setDisciplinas("Java web");
+		
+	    //adicionando as notas na disciplina
+		disciplina1.setNotas(notas);
+		
+		//adicionando o aluno na disciplina
+		aluno.getDisciplina().add(disciplina1);
+		
+		//criacao da disciplina 2
+		
+		Disciplinas disciplina2 = new Disciplinas();
+		disciplina2.setDisciplinas("logica");
+		disciplina2.setNotas(notasLogica);
+		
+		disciplina2.setNotas(notas);
+		
+		aluno.getDisciplina().add(disciplina2);
+		
+		System.out.println("Nome do aluno " + aluno.getNome() + " Nome da disciplina " + aluno.getNomeEscola());
+		System.out.println("======Disciplina do aluno===============");
+		
+		for(Disciplinas disc : aluno.getDisciplina()) {
+			
+			System.out.println("Disciplina: " + disc.getDisciplinas());
+			System.out.println(" As notas da disciplina são:" );
+			
+			
+			
+			for(int pos = 0;pos < disc.getNotas().length;pos ++) {
+				System.out.println("Nota " + (pos + 1) + " é = " + disc.getNotas()[pos]);
+				
+				
+				
+			}
+			
+			
+			
+		}
+
+	}
+}
+
+
+}

@@ -1,0 +1,62 @@
+package TrabalhandoComArrayEmatriz;
+
+
+
+public class Aluno {
+	
+	 private String nome;
+	 private String nomeEscola;
+	 private String disciplina1;
+	 private String disciplina2;
+	 
+	 public Aluno() {
+		// TODO Auto-generated constructor stub
+	}
+	 
+	 
+	 
+	 
+	 public Aluno(String nome, String nomeEscola, String disciplina1, String disciplina2) {
+		super();
+		this.nome = nome;
+		this.nomeEscola = nomeEscola;
+		this.disciplina1 = disciplina1;
+		this.disciplina2 = disciplina2;
+	}
+
+
+
+
+	//get e set
+	
+	public String getDisciplina1() {
+		return disciplina1;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getNomeEscola() {
+		return nomeEscola;
+	}
+	public void setNomeEscola(String nomeEscola) {
+		this.nomeEscola = nomeEscola;
+	}
+	public void setDisciplina1(String disciplina1) {
+		this.disciplina1 = disciplina1;
+	}
+	public String getDisciplina2() {
+		return disciplina2;
+	}
+	public void setDisciplina2(String disciplina2) {
+		this.disciplina2 = disciplina2;
+	}
+	 
+	 
+
+}
+
+
+}

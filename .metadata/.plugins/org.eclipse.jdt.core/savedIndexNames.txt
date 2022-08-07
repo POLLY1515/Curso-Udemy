@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\amara\OneDrive\Área de Trabalho\Projetos Eclipse\.metadata\.plugins\org.eclipse.jdt.core
+4046492475.index

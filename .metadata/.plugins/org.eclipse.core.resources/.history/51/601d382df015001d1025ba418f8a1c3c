@@ -1,0 +1,34 @@
+package TrabalhandoComArrayEmatriz;
+
+
+import javax.swing.JOptionPane;
+
+public class Array {
+	
+	public static void main(String[] args) {
+		//maneira correta de declarar um array em java
+		//tipo[] nome_do_array = new tipo[numero_de_elementos];
+		//Ou:tipo[] nome_do_array = { valor1, valor2, ...,valorx};
+		//Exemplo: double[]temperaturas = new double[365];Essa é a melhor maneira de se 
+		//declarar um array em java.É considerado como boas praticas.
+	
+		
+		String posicoes = JOptionPane.showInputDialog("Quantas posições o array deve ter?");
+	
+		double[]notas = new double[Integer.parseInt(posicoes)];
+		
+		for(int pos = 0;pos < notas.length;pos++) {
+			String valor = JOptionPane.showInputDialog("Qual o valor do array na posição " + (pos + 1));
+			notas[pos] = Double.valueOf(valor);
+		}
+		
+		for(int pos =0;pos<notas.length;pos++) {
+			System.out.println("nota" + (pos + 1) + "=" + notas[pos]);
+		}
+
+	}
+
+}
+
+
+}

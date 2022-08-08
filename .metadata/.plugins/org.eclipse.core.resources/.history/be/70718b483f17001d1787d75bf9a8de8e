@@ -1,0 +1,36 @@
+package Estruturas_repetitivas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		//Fazer um programa que lê números
+		//inteiros até que um zero seja lido. Ao
+		//final mostra a soma dos números lidos.
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		double soma = 0;
+		int cont = 0;
+		
+		System.out.println("****Lendo números inteiro**********");
+		
+		
+		boolean controle = false;
+		int num = 0;
+		while(num != 0) {
+			
+			System.out.print("Entre com um numero inteiro");
+			 num = sc.nextInt();
+			 controle = true;
+			soma += num;
+			
+          cont++;
+		}
+		System.out.println("A SOMA DOS NUMEROS DIGITADOS É: " + soma);
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package Estruturas_repetitivas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+     /*
+Fazer um programa que lê um valor inteiro N e depois N números inteiros.
+Ao final, mostra a soma dos N números lidos*/
+
+		Scanner sc = new Scanner (System.in);
+		Locale.setDefault(Locale.US);
+		int soma = 0;
+		
+		System.out.print("Informe quantos números serão lidos:");
+		int num = sc.nextInt();
+		
+		for(int cont = 0; cont < num ; cont ++) {
+			System.out.println("Informe o número na posição " + (cont +1));
+			int numero = sc.nextInt();
+			soma += numero;
+		}
+		System.out.println("A soma dos números informados é: " + soma);
+	}
+
+}
